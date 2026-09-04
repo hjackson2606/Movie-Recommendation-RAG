@@ -16,7 +16,7 @@ if st.button("Recommend Me"):
         "query": query
     }
 
-    response = requests.post("http://127.0.0.1:8000/recommend-movies", json=payload)
+    response = requests.post("https://movie-recommendation-rag-pjc9.onrender.com/recommend-movies", json=payload)
 
     if response.status_code == 200:
         result = response.json()
