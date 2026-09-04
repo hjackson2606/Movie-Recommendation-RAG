@@ -21,6 +21,7 @@ for i, row in df.iterrows():
         "Released_Year": row["Released_Year"],
         "Certificate": row["Certificate"],
         "Runtime": row["Runtime"],
+        "Genre": row["Genre"],
         "Overview": row["Overview"],
     }
     movies.append(movie_info)
